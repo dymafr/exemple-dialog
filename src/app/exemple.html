@@ -1,0 +1,11 @@
+<ol>
+  <li>
+    <mat-form-field>
+      <input matInput [(ngModel)]="nom" placeholder="Quel est ton nom ?" />
+    </mat-form-field>
+  </li>
+  <li>
+    <button mat-raised-button (click)="openDialog()">Choisir un plat</button>
+  </li>
+  <li *ngIf="plat" style="margin-top:10px;">Tu as choisi <i>{{plat}}</i></li>
+</ol>

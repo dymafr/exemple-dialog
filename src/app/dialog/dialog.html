@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Salut {{data.nom}}</h1>
+<div mat-dialog-content>
+	<p>Quel est ton plat préféré ?</p>
+	<mat-form-field>
+		<input matInput [(ngModel)]="data.plat" />
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+	<button mat-button [mat-dialog-close]="data.plat" tabindex="2">Ok</button>
+	<button mat-button (click)="onNoClick()" tabindex="-1">Aucun</button>
+</div>
